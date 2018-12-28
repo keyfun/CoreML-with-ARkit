@@ -167,8 +167,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
     @IBAction func placeLabelAtLocation(sender: UITapGestureRecognizer) {
         let hitLocationInView = sender.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(hitLocationInView, types: [.featurePoint, .estimatedHorizontalPlane])
+        
         if let result = hitTestResults.first {
-
             // Add a new anchor at the tap location.
             let anchor = ARAnchor(transform: result.worldTransform)
             sceneView.session.add(anchor: anchor)

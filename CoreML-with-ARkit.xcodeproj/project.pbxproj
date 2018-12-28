@@ -66,17 +66,17 @@
 		3FB2C35321D67447009C93E3 /* CoreML-with-ARkit */ = {
 			isa = PBXGroup;
 			children = (
-				3FB2C35421D67447009C93E3 /* AppDelegate.swift */,
-				3FB2C35B21D67448009C93E3 /* Assets.xcassets */,
-				3FB2C36D21D685B4009C93E3 /* Extensions.swift */,
 				3FB2C36021D67448009C93E3 /* Info.plist */,
 				3FB2C37121D68680009C93E3 /* LabelScene.sks */,
-				3FB2C35D21D67448009C93E3 /* LaunchScreen.storyboard */,
-				3FB2C35821D67447009C93E3 /* Main.storyboard */,
-				3FB2C36621D68389009C93E3 /* mimodel */,
+				3FB2C35421D67447009C93E3 /* AppDelegate.swift */,
+				3FB2C36D21D685B4009C93E3 /* Extensions.swift */,
 				3FB2C36B21D68568009C93E3 /* StatusViewController.swift */,
 				3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */,
 				3FB2C35621D67447009C93E3 /* ViewController.swift */,
+				3FB2C35B21D67448009C93E3 /* Assets.xcassets */,
+				3FB2C35D21D67448009C93E3 /* LaunchScreen.storyboard */,
+				3FB2C35821D67447009C93E3 /* Main.storyboard */,
+				3FB2C36621D68389009C93E3 /* mimodel */,
 			);
 			path = "CoreML-with-ARkit";
 			sourceTree = "<group>";

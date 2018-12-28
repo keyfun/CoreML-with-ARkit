@@ -20,6 +20,9 @@
                         <subviews>
                             <arskView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppJ-bw-3jz">
                                 <rect key="frame" x="0.0" y="105" width="375" height="562"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vQ7-zq-an5" appends="YES" id="5vE-Pp-8hU"/>
+                                </connections>
                             </arskView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKF-Bi-gda">
                                 <rect key="frame" x="0.0" y="20" width="375" height="85"/>
@@ -27,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="85" id="z0Z-cy-cen"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="d2h-CK-JMa" kind="embed" id="fVp-QK-zm5"/>
+                                    <segue destination="d2h-CK-JMa" kind="embed" id="QCa-Me-J2t"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -49,6 +52,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vQ7-zq-an5">
+                    <connections>
+                        <action selector="placeLabelAtLocationWithSender:" destination="BYZ-38-t0r" id="GyN-ur-BVH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
         <!--Status View Controller-->
@@ -65,8 +73,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C63-vY-8qV">
-                                            <rect key="frame" x="8" y="32" width="359" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C63-vY-8qV">
+                                            <rect key="frame" x="8" y="42.5" width="359" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
