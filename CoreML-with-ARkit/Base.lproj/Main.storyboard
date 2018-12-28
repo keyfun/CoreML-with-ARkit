@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e39-cj-3XQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,6 +96,7 @@
                             <constraint firstItem="WLb-7i-ICT" firstAttribute="top" secondItem="dg5-Ct-3Gn" secondAttribute="top" id="b8m-fO-5TF"/>
                             <constraint firstAttribute="bottom" secondItem="WLb-7i-ICT" secondAttribute="bottom" id="m62-xF-9VV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iga-GQ-trj"/>
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="C63-vY-8qV" id="cnD-5H-RHC"/>
@@ -105,6 +106,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIE-NN-A08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zjc-22-86B">
+            <objects>
+                <viewController id="e39-cj-3XQ" customClass="ARViewController" customModule="CoreML_with_ARkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbq-gJ-qoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htg-jI-MN8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-vg-T1W">
+                                <rect key="frame" x="0.0" y="20" width="375" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.51875535100000003" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="dZ4-UH-zLe"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYL-oi-Fem">
+                                <rect key="frame" x="176.5" y="322.5" width="22" height="22"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NYL-oi-Fem" firstAttribute="centerX" secondItem="jbq-gJ-qoZ" secondAttribute="centerX" id="54N-t7-bNU"/>
+                            <constraint firstItem="htg-jI-MN8" firstAttribute="trailing" secondItem="bLk-mP-8UQ" secondAttribute="trailing" id="9RB-AT-ob4"/>
+                            <constraint firstItem="AQI-vg-T1W" firstAttribute="top" secondItem="bLk-mP-8UQ" secondAttribute="top" id="O1N-Fj-N6f"/>
+                            <constraint firstItem="htg-jI-MN8" firstAttribute="top" secondItem="jbq-gJ-qoZ" secondAttribute="top" id="dcL-Ja-743"/>
+                            <constraint firstItem="AQI-vg-T1W" firstAttribute="leading" secondItem="bLk-mP-8UQ" secondAttribute="leading" id="fKy-4s-qJE"/>
+                            <constraint firstItem="AQI-vg-T1W" firstAttribute="trailing" secondItem="bLk-mP-8UQ" secondAttribute="trailing" id="gKm-d6-xxX"/>
+                            <constraint firstItem="NYL-oi-Fem" firstAttribute="centerY" secondItem="jbq-gJ-qoZ" secondAttribute="centerY" id="gxC-Bv-o9T"/>
+                            <constraint firstItem="htg-jI-MN8" firstAttribute="leading" secondItem="bLk-mP-8UQ" secondAttribute="leading" id="yCp-dF-pDF"/>
+                            <constraint firstItem="htg-jI-MN8" firstAttribute="bottom" secondItem="bLk-mP-8UQ" secondAttribute="bottom" id="ybO-1K-psB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bLk-mP-8UQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="AQI-vg-T1W" id="Lvp-GL-e7s"/>
+                        <outlet property="sceneView" destination="htg-jI-MN8" id="ico-9c-V5S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ote-Sb-sbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

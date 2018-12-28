@@ -18,6 +18,7 @@
 		3FB2C36E21D685B4009C93E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36D21D685B4009C93E3 /* Extensions.swift */; };
 		3FB2C37021D6862A009C93E3 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */; };
 		3FB2C37221D68680009C93E3 /* LabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C37121D68680009C93E3 /* LabelScene.sks */; };
+		3FB2C37421D6906A009C93E3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C37321D6906A009C93E3 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3FB2C36D21D685B4009C93E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
 		3FB2C37121D68680009C93E3 /* LabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabelScene.sks; sourceTree = "<group>"; };
+		3FB2C37321D6906A009C93E3 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3FB2C36021D67448009C93E3 /* Info.plist */,
 				3FB2C37121D68680009C93E3 /* LabelScene.sks */,
 				3FB2C35421D67447009C93E3 /* AppDelegate.swift */,
+				3FB2C37321D6906A009C93E3 /* ARViewController.swift */,
 				3FB2C36D21D685B4009C93E3 /* Extensions.swift */,
 				3FB2C36B21D68568009C93E3 /* StatusViewController.swift */,
 				3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */,
@@ -165,6 +168,7 @@
 				3FB2C35721D67447009C93E3 /* ViewController.swift in Sources */,
 				3FB2C37021D6862A009C93E3 /* TemplateLabelNode.swift in Sources */,
 				3FB2C36E21D685B4009C93E3 /* Extensions.swift in Sources */,
+				3FB2C37421D6906A009C93E3 /* ARViewController.swift in Sources */,
 				3FB2C36A21D68389009C93E3 /* Inceptionv3.mlmodel in Sources */,
 				3FB2C35521D67447009C93E3 /* AppDelegate.swift in Sources */,
 				3FB2C36921D68389009C93E3 /* MobileNet.mlmodel in Sources */,
