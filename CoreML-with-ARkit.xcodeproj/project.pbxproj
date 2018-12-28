@@ -12,6 +12,12 @@
 		3FB2C35A21D67447009C93E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C35821D67447009C93E3 /* Main.storyboard */; };
 		3FB2C35C21D67448009C93E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C35B21D67448009C93E3 /* Assets.xcassets */; };
 		3FB2C35F21D67448009C93E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C35D21D67448009C93E3 /* LaunchScreen.storyboard */; };
+		3FB2C36921D68389009C93E3 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36721D68389009C93E3 /* MobileNet.mlmodel */; };
+		3FB2C36A21D68389009C93E3 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36821D68389009C93E3 /* Inceptionv3.mlmodel */; };
+		3FB2C36C21D68568009C93E3 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36B21D68568009C93E3 /* StatusViewController.swift */; };
+		3FB2C36E21D685B4009C93E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36D21D685B4009C93E3 /* Extensions.swift */; };
+		3FB2C37021D6862A009C93E3 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */; };
+		3FB2C37221D68680009C93E3 /* LabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C37121D68680009C93E3 /* LabelScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3FB2C35B21D67448009C93E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB2C35E21D67448009C93E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB2C36021D67448009C93E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB2C36721D68389009C93E3 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		3FB2C36821D68389009C93E3 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		3FB2C36B21D68568009C93E3 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		3FB2C36D21D685B4009C93E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
+		3FB2C37121D68680009C93E3 /* LabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabelScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				3FB2C35421D67447009C93E3 /* AppDelegate.swift */,
-				3FB2C35621D67447009C93E3 /* ViewController.swift */,
-				3FB2C35821D67447009C93E3 /* Main.storyboard */,
 				3FB2C35B21D67448009C93E3 /* Assets.xcassets */,
-				3FB2C35D21D67448009C93E3 /* LaunchScreen.storyboard */,
+				3FB2C36D21D685B4009C93E3 /* Extensions.swift */,
 				3FB2C36021D67448009C93E3 /* Info.plist */,
+				3FB2C37121D68680009C93E3 /* LabelScene.sks */,
+				3FB2C35D21D67448009C93E3 /* LaunchScreen.storyboard */,
+				3FB2C35821D67447009C93E3 /* Main.storyboard */,
+				3FB2C36621D68389009C93E3 /* mimodel */,
+				3FB2C36B21D68568009C93E3 /* StatusViewController.swift */,
+				3FB2C36F21D6862A009C93E3 /* TemplateLabelNode.swift */,
+				3FB2C35621D67447009C93E3 /* ViewController.swift */,
 			);
 			path = "CoreML-with-ARkit";
+			sourceTree = "<group>";
+		};
+		3FB2C36621D68389009C93E3 /* mimodel */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2C36721D68389009C93E3 /* MobileNet.mlmodel */,
+				3FB2C36821D68389009C93E3 /* Inceptionv3.mlmodel */,
+			);
+			path = mimodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +151,7 @@
 				3FB2C35F21D67448009C93E3 /* LaunchScreen.storyboard in Resources */,
 				3FB2C35C21D67448009C93E3 /* Assets.xcassets in Resources */,
 				3FB2C35A21D67447009C93E3 /* Main.storyboard in Resources */,
+				3FB2C37221D68680009C93E3 /* LabelScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB2C35721D67447009C93E3 /* ViewController.swift in Sources */,
+				3FB2C37021D6862A009C93E3 /* TemplateLabelNode.swift in Sources */,
+				3FB2C36E21D685B4009C93E3 /* Extensions.swift in Sources */,
+				3FB2C36A21D68389009C93E3 /* Inceptionv3.mlmodel in Sources */,
 				3FB2C35521D67447009C93E3 /* AppDelegate.swift in Sources */,
+				3FB2C36921D68389009C93E3 /* MobileNet.mlmodel in Sources */,
+				3FB2C36C21D68568009C93E3 /* StatusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
